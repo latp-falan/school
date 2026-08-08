@@ -17,15 +17,15 @@
 
 window.HANDSON = [
 
-  // --- EXAMPLE: workshop protocol linked from Google Drive ---
-  // {
-  //   title: "Protocol: Neuroinflammation by Flow Cytometry",
-  //   presenter: "Workshop lead name",
-  //   week: "Neuroinflammation by Flow Cytometry",
-  //   day: "Session 1",
-  //   type: "drive",
-  //   url: "https://drive.google.com/drive/folders/PASTE-YOUR-LINK-HERE"
-  // },
+   --- EXAMPLE: workshop protocol linked from Google Drive ---
+   {
+     title: "Protocol: Neuroinflammation by Flow Cytometry",
+     presenter: "Workshop lead name",
+     week: "Neuroinflammation by Flow Cytometry",
+     day: "Session 1",
+     type: "drive",
+     url: "https://drive.google.com/drive/folders/PASTE-YOUR-LINK-HERE"
+   },
 
   // --- EXAMPLE: a short prep handout uploaded straight to GitHub ---
   // {
