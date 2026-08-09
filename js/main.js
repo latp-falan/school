@@ -53,7 +53,11 @@ function initWeekTabs() {
  *
  * Expected item shape (see data/lectures-data.js and data/handson-data.js
  * for the exact fields and worked examples):
- *   { title, presenter, week, day, type: 'drive'|'file', url, filename }
+ *   { title, presenter, week, day, type: 'drive'|'file'|'note', url, filename, note }
+ *
+ * type: 'note' items show a text message instead of a file link — use the
+ * "note" field for the message body. Plain URLs inside a note are turned
+ * into clickable links automatically.
  */
 function renderMaterials(rootId, items, kindLabel) {
   var root = document.getElementById(rootId);
@@ -80,6 +84,16 @@ function renderMaterials(rootId, items, kindLabel) {
     html += '<div class="materials-group">';
     html += '<h3>' + escapeHtml(weekKey) + '</h3>';
     groups[weekKey].forEach(function (item) {
+      if (item.type === 'note') {
+        html += '<div class="material-note">';
+        html += '<span class="title">' + escapeHtml(item.title) + '</span>';
+        if (item.presenter || item.day) {
+          html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + '</span>';
+        }
+        html += linkify(escapeHtml(item.note || ''));
+        html += '</div>';
+        return;
+      }
       var href = item.type === 'file'
         ? ('materials/' + item.filename)
         : item.url;
@@ -96,6 +110,16 @@ function renderMaterials(rootId, items, kindLabel) {
   });
 
   root.innerHTML = html;
+}
+
+function linkify(escapedText) {
+  var paragraphs = escapedText.split(/\n\s*\n/).map(function (p) {
+    return p.replace(/\n/g, '<br>');
+  });
+  var withLinks = paragraphs.map(function (p) {
+    return p.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+  });
+  return withLinks.map(function (p) { return '<p>' + p + '</p>'; }).join('');
 }
 
 function escapeHtml(str) {
