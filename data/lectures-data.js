@@ -4,7 +4,9 @@
  * This is the ONLY file you need to edit to add a lecture to the website.
  * Edit it directly on github.com (open the file, click the pencil icon).
  *
- * Two ways to add a file:
+ * Two ways to add a file (a third "note" type — for text messages with no
+ * file, like pre-session instructions — is documented in
+ * data/handson-data.js):
  *
  * 1) GOOGLE DRIVE (recommended for anything above a few MB, or videos):
  *    - Get a shareable link from Drive ("Anyone with the link can view")
