@@ -407,6 +407,65 @@ table.schedule tbody th {
   white-space: nowrap;
 }
 
+.venue-note {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sun);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.92rem;
+}
+.venue-note strong { color: var(--ink); }
+.venue-note .flag {
+  color: #B23A2E;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+table.schedule td .who {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ash);
+  margin-top: 0.25rem;
+}
+table.schedule td .session-sep {
+  display: block;
+  border-top: 1px dashed var(--line);
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+}
+table.schedule td.dim { color: var(--ash); font-style: italic; }
+
+.workshop-list-wrap { margin-top: 2rem; }
+.workshop-list-wrap h3 { margin-bottom: 0.8rem; }
+.workshop-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.workshop-list li {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+}
+.workshop-list .lead {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cordillera);
+  margin-top: 0.2rem;
+}
+
 .week-tabs {
   display: flex;
   gap: 0.5rem;
