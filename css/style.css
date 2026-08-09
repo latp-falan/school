@@ -366,6 +366,36 @@ section.on-dim { background: var(--paper-dim); }
   white-space: nowrap;
 }
 
+.material-note {
+  background: var(--paper-dim);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sun);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  margin: 0.9rem 0;
+}
+.material-note .title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+.material-note .who {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cordillera);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.material-note p {
+  margin: 0 0 0.7em;
+  color: var(--ash);
+  font-size: 0.92rem;
+}
+.material-note p:last-child { margin-bottom: 0; }
+.material-note a { word-break: break-word; }
+
 /* ---- Schedule table ---- */
 
 .schedule-table-wrap { overflow-x: auto; }
