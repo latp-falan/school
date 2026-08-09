@@ -49,14 +49,14 @@ window.HANDSON = [
     presenter: "Carlos Rozas",
     week: "Synaptic Plasticity in the Hippocampus",
     type: "file",
-    filename: "file1.pdf"
+    filename: "P003_ AnalisisThetaBurst_Enero2024.pdf"
   },
   {
     title: "Analysis files 2",
     presenter: "Carlos Rozas",
     week: "Synaptic Plasticity in the Hippocampus",
     type: "file",
-    filename: "file2.pdf"
+    filename: "P002_ AnalisisExtracelular_6Agosto2026.pdf"
   },
 
   // --- Analysis of Neuroinflammation by Flow Cytometry ---
