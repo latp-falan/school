@@ -513,6 +513,28 @@ table.schedule td.dim { color: var(--ash); font-style: italic; }
   .student-list { columns: 2; column-gap: 1.5rem; }
 }
 
+.student-days {
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+}
+.student-day {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ash);
+  line-height: 1.5;
+}
+.student-day:last-child { margin-bottom: 0; }
+.student-day .day-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cordillera);
+  display: inline-block;
+  min-width: 82px;
+}
+
 .plain-list {
   list-style: none;
   margin: 0;
