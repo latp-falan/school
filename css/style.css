@@ -465,6 +465,46 @@ table.schedule td.dim { color: var(--ash); font-style: italic; }
   color: var(--cordillera);
   margin-top: 0.2rem;
 }
+.student-list {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px dashed var(--line);
+  columns: 1;
+}
+.student-list li {
+  background: none;
+  border: none;
+  padding: 0.2rem 0;
+  font-size: 0.85rem;
+  color: var(--ash);
+}
+@media (min-width: 640px) {
+  .student-list { columns: 2; column-gap: 1.5rem; }
+}
+
+.plain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 1;
+}
+.plain-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  break-inside: avoid;
+}
+.plain-list li:last-child { border-bottom: none; }
+.plain-list .affil {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ash);
+  display: block;
+  margin-top: 0.1rem;
+}
+@media (min-width: 700px) {
+  .plain-list.two-col { columns: 2; column-gap: 2.5rem; }
+}
 
 .week-tabs {
   display: flex;
