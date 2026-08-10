@@ -31,6 +31,12 @@
  * ONE FILE PER ENTRY. If a workshop has several files, just copy-paste
  * the whole entry block again below it and change the title/filename —
  * as many times as you need.
+ *
+ * A REMINDER ON SYNTAX — every field needs a comma after it EXCEPT the
+ * very last field in an entry, and every piece of text needs both an
+ * opening AND a closing quote mark. Missing either of these breaks the
+ * whole file, not just that one entry, so if something stops showing up
+ * on the live site, that's the first thing to check.
  */
 
 window.HANDSON = [
@@ -65,6 +71,7 @@ window.HANDSON = [
     type: "file",
     filename: "DiaposClaseExtracelular.pdf"
   },
+
   // --- Analysis of Neuroinflammation by Flow Cytometry ---
 
   {
@@ -74,13 +81,17 @@ window.HANDSON = [
     type: "note",
     note: "You have to bring your personal computers on day 2 and install this software: https://www.omiq.ai/"
   },
+
+  // --- EEG Analysis During Continuous Speech Perception (mTRF) ---
+
   {
     title: "Pre-session note",
     presenter: "Ana Campos",
-    week: "EEG Analysis During Continuous Speech Perception Using Multivariate Temporal Response Functions (mTRF)"
+    week: "EEG Analysis During Continuous Speech Perception Using Multivariate Temporal Response Functions (mTRF)",
     type: "note",
-    note: " Dear students,\n\nPlease bring your laptop for our workshop. I have prepared a shared Google Drive folder with datasets and pre-workshop tasks for you to do in advance, available here: https://drive.google.com/drive/folders/1XKYsbfxrJqIAYp_aP5md4e6M5E7NmV4N  \n\nBefore the session, please: Download MATLAB in advance, as this may take considerable time: Versión de prueba gratuita - MATLAB & Simulink Download the toolboxes and datasets for the session (instructions in the ReadMe files)
+    note: "Dear students,\n\nPlease bring your laptop for our workshop. I have prepared a shared Google Drive folder with datasets and pre-workshop tasks for you to do in advance, available here: https://drive.google.com/drive/folders/1XKYsbfxrJqIAYp_aP5md4e6M5E7NmV4N\n\nBefore the session, please: download MATLAB in advance, as this may take considerable time (free trial version available from MATLAB & Simulink), and download the toolboxes and datasets for the session (instructions in the ReadMe files)."
   },
+
   // ---------------------------------------------------------------------
   // TEMPLATE — Setting up a cheap electrophysiology rig
   // Fill in the real details, then delete the "//" at the start of each
