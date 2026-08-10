@@ -58,7 +58,7 @@ window.HANDSON = [
     type: "file",
     filename: "P002_ AnalisisExtracelular_6Agosto2026.pdf"
   },
-{
+  {
     title: "Extracellular recordings ppt",
     presenter: "Carlos Rozas",
     week: "Synaptic Plasticity in the Hippocampus",
