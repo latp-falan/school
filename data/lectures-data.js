@@ -54,4 +54,29 @@ window.LECTURES = [
      type: "file",
      filename: "LATP_lecture_P_Rojas.pdf"
    }, 
+
+  {
+     title: "The patch-clamp technique",
+     presenter: "Fernando Ortiz",
+     week: "Week 1 — Santiago",
+     day: "Tuesday",
+     type: "file",
+     filename: "patch clamp-FALAN-pdf.pdf"
+   }, 
+   {
+     title: "The patch-clamp technique",
+     presenter: "Fernando Ortiz",
+     week: "Week 1 — Santiago",
+     day: "Tuesday",
+     type: "file",
+     filename: "Patch-clamp-protocol-final.pdf"
+   }, 
+  {
+     title: "The patch-clamp technique",
+     presenter: "Fernando Ortiz",
+     week: "Week 1 — Santiago",
+     day: "Tuesday",
+     type: "file",
+     filename: "the-axon-guide.pdf"
+   }, 
 ];
