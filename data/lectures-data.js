@@ -44,5 +44,14 @@ window.LECTURES = [
   //   type: "file",
   //   filename: "gonzalez-billault-synaptic-plasticity.pdf"
   // },
-
+  
+  // --- EXAMPLE: a small slide deck uploaded straight to GitHub ---
+  {
+     title: "Instrumentation for electrophysiological recordings",
+     presenter: "Patricio Rojas",
+     week: "Week 1 — Santiago",
+     day: "Tuesday",
+     type: "file",
+     filename: "LATP_lecture_P_Rojas.pdf"
+   }, 
 ];
