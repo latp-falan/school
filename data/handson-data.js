@@ -81,6 +81,13 @@ window.HANDSON = [
     type: "note",
     note: "You have to bring your personal computers on day 2 and install this software: https://www.omiq.ai/"
   },
+  {
+    title: "Analysis files 2",
+    presenter: "Luisa Duarte",
+    week: "Analysis of Neuroinflammation by Flow Cytometry",
+    type: "file",
+    filename: "10 August, 2026 Obtaining a cell suspension from mouse brain Course.docx"
+  },
 
   // --- EEG Analysis During Continuous Speech Perception (mTRF) ---
 
