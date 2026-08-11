@@ -64,7 +64,7 @@ window.LECTURES = [
      filename: "patch clamp-FALAN-pdf.pdf"
    }, 
    {
-     title: "The patch-clamp technique",
+     title: "Patch-clamp protocol",
      presenter: "Fernando Ortiz",
      week: "Week 1 — Santiago",
      day: "Tuesday",
@@ -72,7 +72,7 @@ window.LECTURES = [
      filename: "Patch-clamp-protocol-final.pdf"
    }, 
   {
-     title: "The patch-clamp technique",
+     title: "The Axon Guide",
      presenter: "Fernando Ortiz",
      week: "Week 1 — Santiago",
      day: "Tuesday",
