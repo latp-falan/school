@@ -82,7 +82,7 @@ window.HANDSON = [
     note: "You have to bring your personal computers on day 2 and install this software: https://www.omiq.ai/"
   },
   {
-    title: "Analysis files 2",
+    title: "Obtaining a cell suspension from mouse brain Course",
     presenter: "Luisa Duarte",
     week: "Analysis of Neuroinflammation by Flow Cytometry",
     type: "file",
