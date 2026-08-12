@@ -79,4 +79,12 @@ window.LECTURES = [
      type: "file",
      filename: "the-axon-guide.pdf"
    }, 
+  {
+     title: "Optogenetics lecture",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "Optogenetics_class.pdf"
+   }, 
 ];
