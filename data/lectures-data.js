@@ -87,4 +87,52 @@ window.LECTURES = [
      type: "file",
      filename: "Optogenetics_class.pdf"
    }, 
+  {
+     title: "Optogenetics for light control of biological systems",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "emiliani2022.pdf"
+   }, 
+  {
+     title: "Principles of designing interpretable optogenetic behavior experiments",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "AllenLM038026.pdf"
+   }, 
+  {
+     title: "Optetrode: a multichannel readout for optogenetic control in freely moving mice",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "nihms625712.pdf"
+   }, 
+  {
+     title: "Multimodal on-axis platform for all-optical electrophysiology with near-infrared probes in human stem-cell-derived cardiomyocytes",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "1-s2.0-S0079610718302797-main.pdf"
+   }, 
+  {
+     title: "Optogenetic investigation of neural circuits in vivo",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "nihms277239.pdf"
+   }, 
+  {
+     title: "Arduino based intra-cerebral microinjector device for neuroscience research",
+     presenter: "Elias Leiva",
+     week: "Week 1 — Santiago",
+     day: "Wednesday",
+     type: "file",
+     filename: "PIIS2468067223000536.pdf"
+   }, 
 ];
