@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initWeekTabs();
   renderMaterials('lectures-root', window.LECTURES, 'lecture');
   renderMaterials('handson-root', window.HANDSON, 'workshop');
+  renderNews('news-root', window.NEWS);
 });
 
 function initNavToggle() {
@@ -87,8 +88,8 @@ function renderMaterials(rootId, items, kindLabel) {
       if (item.type === 'note') {
         html += '<div class="material-note">';
         html += '<span class="title">' + escapeHtml(item.title) + '</span>';
-        if (item.presenter || item.day) {
-          html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + '</span>';
+        if (item.presenter || item.day || item.dateAdded) {
+          html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + (item.dateAdded ? ' <span class="added-tag">&middot; Added ' + escapeHtml(item.dateAdded) + '</span>' : '') + '</span>';
         }
         html += linkify(escapeHtml(item.note || ''));
         html += '</div>';
@@ -101,7 +102,7 @@ function renderMaterials(rootId, items, kindLabel) {
       html += '<div class="material-item">';
       html += '<span class="stack">';
       html += '<span class="title">' + escapeHtml(item.title) + '</span>';
-      html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + '</span>';
+      html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + (item.dateAdded ? ' <span class="added-tag">&middot; Added ' + escapeHtml(item.dateAdded) + '</span>' : '') + '</span>';
       html += '</span>';
       html += '<a class="link" href="' + href + '" target="_blank" rel="noopener">' + linkText + ' &rarr;</a>';
       html += '</div>';
@@ -120,6 +121,38 @@ function linkify(escapedText) {
     return p.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
   });
   return withLinks.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+}
+
+/**
+ * Renders the News / Updates page from data/news-data.js.
+ * Entries are shown in the order they appear in the array — newest
+ * should be listed first there.
+ */
+function renderNews(rootId, items) {
+  var root = document.getElementById(rootId);
+  if (!root) return;
+
+  if (!items || items.length === 0) {
+    return; // empty state markup already lives in the page HTML
+  }
+
+  var emptyState = root.parentElement.querySelector('.empty-state');
+  if (emptyState) emptyState.style.display = 'none';
+
+  var html = '<div class="news-list">';
+  items.forEach(function (item) {
+    html += '<div class="news-item">';
+    html += '<span class="news-date">' + escapeHtml(item.date || '') + '</span>';
+    html += '<div>';
+    html += '<h3 class="news-title">' + escapeHtml(item.title) + '</h3>';
+    if (item.body) {
+      html += '<p class="news-body">' + escapeHtml(item.body) + '</p>';
+    }
+    html += '</div></div>';
+  });
+  html += '</div>';
+
+  root.innerHTML = html;
 }
 
 function escapeHtml(str) {
