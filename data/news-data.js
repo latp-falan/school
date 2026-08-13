@@ -28,5 +28,10 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
+  {
+     date: "August 12, 2026",
+     title: "Thursday lectures",
+     body: "We will meet at Hospitales metro station (Line 1) at 8:40 AM."
+   },
 
 ];
