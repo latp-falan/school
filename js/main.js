@@ -84,9 +84,15 @@ function renderMaterials(rootId, items, kindLabel) {
   order.forEach(function (weekKey) {
     html += '<div class="materials-group">';
     html += '<h3>' + escapeHtml(weekKey) + '</h3>';
+    var lastPresenter = null;
     groups[weekKey].forEach(function (item) {
+      var presenter = item.presenter || '';
+      var isNewPresenter = lastPresenter !== null && presenter !== lastPresenter;
+      lastPresenter = presenter;
+      var breakClass = isNewPresenter ? ' presenter-break' : '';
+
       if (item.type === 'note') {
-        html += '<div class="material-note">';
+        html += '<div class="material-note' + breakClass + '">';
         html += '<span class="title">' + escapeHtml(item.title) + '</span>';
         if (item.presenter || item.day || item.dateAdded) {
           html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + (item.dateAdded ? ' <span class="added-tag">&middot; Added ' + escapeHtml(item.dateAdded) + '</span>' : '') + '</span>';
@@ -99,7 +105,7 @@ function renderMaterials(rootId, items, kindLabel) {
         ? ('materials/' + item.filename)
         : item.url;
       var linkText = item.type === 'file' ? 'Download' : 'Open in Drive';
-      html += '<div class="material-item">';
+      html += '<div class="material-item' + breakClass + '">';
       html += '<span class="stack">';
       html += '<span class="title">' + escapeHtml(item.title) + '</span>';
       html += '<span class="who">' + escapeHtml(item.presenter || '') + (item.day ? ' &middot; ' + escapeHtml(item.day) : '') + (item.dateAdded ? ' <span class="added-tag">&middot; Added ' + escapeHtml(item.dateAdded) + '</span>' : '') + '</span>';
