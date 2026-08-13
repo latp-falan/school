@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   initNavToggle();
   markActiveNav();
   initWeekTabs();
-  renderMaterials('lectures-root', window.LECTURES, 'lecture');
-  renderMaterials('handson-root', window.HANDSON, 'workshop');
+  renderMaterials('lectures-root', window.LECTURES, 'lecture', 'presenter');
+  renderMaterials('handson-root', window.HANDSON, 'workshop', 'every');
   renderNews('news-root', window.NEWS);
 });
 
@@ -59,8 +59,16 @@ function initWeekTabs() {
  * type: 'note' items show a text message instead of a file link — use the
  * "note" field for the message body. Plain URLs inside a note are turned
  * into clickable links automatically.
+ *
+ * breakMode controls the divider line shown between items in the same
+ * group:
+ *   'presenter' — only when the presenter changes from the previous item
+ *                 (used on the Lecture Materials page)
+ *   'every'     — before every item except the first (used on the
+ *                 Hands-on Materials page, since items in a workshop
+ *                 usually share the same presenter)
  */
-function renderMaterials(rootId, items, kindLabel) {
+function renderMaterials(rootId, items, kindLabel, breakMode) {
   var root = document.getElementById(rootId);
   if (!root) return;
 
@@ -85,11 +93,16 @@ function renderMaterials(rootId, items, kindLabel) {
     html += '<div class="materials-group">';
     html += '<h3>' + escapeHtml(weekKey) + '</h3>';
     var lastPresenter = null;
-    groups[weekKey].forEach(function (item) {
+    groups[weekKey].forEach(function (item, index) {
       var presenter = item.presenter || '';
-      var isNewPresenter = lastPresenter !== null && presenter !== lastPresenter;
+      var isBreak;
+      if (breakMode === 'every') {
+        isBreak = index > 0;
+      } else {
+        isBreak = lastPresenter !== null && presenter !== lastPresenter;
+      }
       lastPresenter = presenter;
-      var breakClass = isNewPresenter ? ' presenter-break' : '';
+      var breakClass = isBreak ? ' presenter-break' : '';
 
       if (item.type === 'note') {
         html += '<div class="material-note' + breakClass + '">';
