@@ -29,6 +29,21 @@ window.NEWS = [
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
   {
+     date: "August 15, 2026",
+     title: "Trip to Valparaiso",
+     body: "Bus tickets were sent by email. You Have to be Saturday 15th 30 minutes before the time at Pajatiros Bus Station (next to metro station 9:10 AM."
+   },
+  {
+     date: "August 14, 2026",
+     title: "Poster presentation",
+     body: "Poster presentations at CEPEC_USACH at 9:10 AM."
+   },
+  {
+     date: "August 13, 2026",
+     title: "EEG Part 1",
+     body: "Lecture of Dr. Boris Lucero at 9:10 AM."
+   },
+  {
      date: "August 12, 2026",
      title: "Thursday lectures",
      body: "We will meet at Hospitales metro station (Line 1) at 8:40 AM."
