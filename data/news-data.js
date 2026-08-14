@@ -48,5 +48,15 @@ window.NEWS = [
      title: "Thursday lectures",
      body: "We will meet at Hospitales metro station (Line 1) at 8:40 AM."
    },
+  {
+     date: "August 12, 2026",
+     title: "Wednedday lecture",
+     body: "Lecture and papers  of Dr. Leiva were uploaded."
+   }, 
+  {
+     date: "August 11, 2026",
+     title: "Tuesday lectures",
+     body: "Lectures of Dr. Rojas and Dr. Ortiz were uploaded."
+   },
 
 ];
