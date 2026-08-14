@@ -28,8 +28,14 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
+  
   {
-     date: "August 15, 2026",
+     date: "August 14, 2026",
+     title: "Update to Hands-on",
+     body: "Add new workshop entry for Physics of Electrical Neurostimulation"
+   },
+  {
+     date: "August 14, 2026",
      title: "Trip to Valparaiso",
      body: "Bus tickets were sent by email. You have to be there on Saturday the 15th, 30 minutes before the time, at Pajatiros Bus Station (next to the metro station)."
    },
