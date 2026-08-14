@@ -135,4 +135,12 @@ window.LECTURES = [
      type: "file",
      filename: "PIIS2468067223000536.pdf"
    }, 
+  {
+     title: "EEG part I",
+     presenter: "Boris Lucero",
+     week: "Week 1 — Santiago",
+     day: "Thursday",
+     type: "file",
+     filename: "EEG_Part_I_Lucero_FALANSchool_2026_01_compressed.pdf"
+   }, 
 ];
