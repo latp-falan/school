@@ -114,10 +114,17 @@ function renderMaterials(rootId, items, kindLabel, breakMode) {
         html += '</div>';
         return;
       }
-      var href = item.type === 'file'
-        ? ('materials/' + item.filename)
-        : item.url;
-      var linkText = item.type === 'file' ? 'Download' : 'Open in Drive';
+      var href, linkText;
+      if (item.type === 'file') {
+        href = 'materials/' + item.filename;
+        linkText = 'Download';
+      } else if (item.type === 'link') {
+        href = item.url;
+        linkText = item.linkLabel || 'Open link';
+      } else {
+        href = item.url;
+        linkText = 'Open in Drive';
+      }
       html += '<div class="material-item' + breakClass + '">';
       html += '<span class="stack">';
       html += '<span class="title">' + escapeHtml(item.title) + '</span>';
