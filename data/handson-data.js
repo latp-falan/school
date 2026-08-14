@@ -98,7 +98,14 @@ window.HANDSON = [
     type: "note",
     note: "Dear students,\n\nPlease bring your laptop for our workshop. I have prepared a shared Google Drive folder with datasets and pre-workshop tasks for you to do in advance, available here: https://drive.google.com/drive/folders/1XKYsbfxrJqIAYp_aP5md4e6M5E7NmV4N\n\nBefore the session, please: download MATLAB in advance, as this may take considerable time (free trial version available from MATLAB & Simulink), and download the toolboxes and datasets for the session (instructions in the ReadMe files)."
   },
-
+ {
+  title: "Physics of Electrical Neurostimulation",
+  presenter: "Leonel Medina, Cristian Morales, Rodrigo Osorio",
+  week: "Physics of Electrical Neurostimulation",
+  type: "link",
+  url: "https://github.com/neuroeng-usach/falan-neurostim-workshop",
+  linkLabel: "View on GitHub"
+},
   // ---------------------------------------------------------------------
   // TEMPLATE — Setting up a cheap electrophysiology rig
   // Fill in the real details, then delete the "//" at the start of each
