@@ -36,7 +36,7 @@ window.NEWS = [
   {
      date: "August 14, 2026",
      title: "Poster presentation",
-     body: "Poster presentations at CEPEC_USACH at 9:10 AM."
+     body: "Poster presentations at CEPEC_USACH at 9:30 AM."
    },
   {
      date: "August 13, 2026",
