@@ -37,7 +37,7 @@ window.NEWS = [
   {
      date: "August 14, 2026",
      title: "Trip to Valparaiso",
-     body: "Bus tickets were sent by email. You have to be there on <strong>Saturday the 15th, 30 minutes before the time<\strong>, at Pajatiros Bus Station (next to the metro station)."
+     body: "Bus tickets were sent by email. You have to be there on <strong>Saturday the 15th, 30 minutes before the time</strong>, at Pajatiros Bus Station (next to the metro station)."
    },
   {
      date: "August 14, 2026",
