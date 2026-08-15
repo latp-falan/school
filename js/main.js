@@ -146,7 +146,25 @@ function linkify(escapedText) {
   var withLinks = paragraphs.map(function (p) {
     return p.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
   });
-  return withLinks.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+  return withLinks.map(function (p) { return '<p>' + allowBold(p) + '</p>'; }).join('');
+}
+
+/**
+ * escapeHtml() turns every "<" and ">" into visible text, so a stray
+ * bracket anywhere in a data file can never break the page. That means
+ * <strong> typed into a "note" or "body" field shows up as literal text
+ * instead of making anything bold.
+ *
+ * This function re-enables JUST <strong> and </strong> (and <b>/</b>)
+ * after escaping — so those two tags work as expected, while anything
+ * else typed with < or > still shows up safely as plain text.
+ */
+function allowBold(escapedText) {
+  return escapedText
+    .replace(/&lt;strong&gt;/g, '<strong>')
+    .replace(/&lt;\/strong&gt;/g, '</strong>')
+    .replace(/&lt;b&gt;/g, '<strong>')
+    .replace(/&lt;\/b&gt;/g, '</strong>');
 }
 
 /**
@@ -172,7 +190,7 @@ function renderNews(rootId, items) {
     html += '<div>';
     html += '<h3 class="news-title">' + escapeHtml(item.title) + '</h3>';
     if (item.body) {
-      html += '<p class="news-body">' + escapeHtml(item.body) + '</p>';
+      html += '<p class="news-body">' + allowBold(escapeHtml(item.body)) + '</p>';
     }
     html += '</div></div>';
   });
