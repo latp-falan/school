@@ -171,6 +171,14 @@ function allowBold(escapedText) {
  * Renders the News / Updates page from data/news-data.js.
  * Entries are shown in the order they appear in the array — newest
  * should be listed first there.
+ *
+ * Optional attachment fields on any entry (same idea as lectures-data.js
+ * / handson-data.js — a Drive link OR a small file uploaded to GitHub):
+ *   fileType:  "drive" or "file"
+ *   url:       the Drive link (only used when fileType is "drive")
+ *   filename:  the exact uploaded filename in /materials (only used
+ *              when fileType is "file")
+ *   fileLabel: optional button text override, e.g. "Download the PDF"
  */
 function renderNews(rootId, items) {
   var root = document.getElementById(rootId);
@@ -191,6 +199,11 @@ function renderNews(rootId, items) {
     html += '<h3 class="news-title">' + escapeHtml(item.title) + '</h3>';
     if (item.body) {
       html += '<p class="news-body">' + allowBold(escapeHtml(item.body)) + '</p>';
+    }
+    if (item.fileType) {
+      var href = item.fileType === 'file' ? ('materials/' + item.filename) : item.url;
+      var label = item.fileLabel || (item.fileType === 'file' ? 'Download' : 'Open in Drive');
+      html += '<a class="link news-link" href="' + href + '" target="_blank" rel="noopener">' + escapeHtml(label) + ' &rarr;</a>';
     }
     html += '</div></div>';
   });
