@@ -34,7 +34,7 @@ window.NEWS = [
   body: "This is a guide to CINV in Valparaiso.",
   fileType: "file",
   filename: "Guia ingles CINV2026.pdf",
-  fileLabel: "Guideo CINV"
+  fileLabel: "Guide to CINV"
   },
   {
      date: "August 14, 2026",
