@@ -28,7 +28,14 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
-  
+  {
+  date: "August 15, 2026",
+  title: "Guide to CINV",
+  body: "This is a guide to CINV in Valparaiso.",
+  fileType: "file",
+  filename: "Guia ingles CINV2026.pdf",
+  fileLabel: "Guideo CINV"
+  },
   {
      date: "August 14, 2026",
      title: "Update to Hands-on",
