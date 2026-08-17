@@ -29,6 +29,11 @@ window.NEWS = [
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
   {
+     date: "August 17, 2026",
+     title: "Add  lectures ppt ",
+     body: "Added lecture of Dr. Patricio Orio"
+   },
+  {
   date: "August 15, 2026",
   title: "Guide to CINV",
   body: "This is a guide to CINV in Valparaiso.",
@@ -36,6 +41,7 @@ window.NEWS = [
   filename: "Guia ingles CINV2026.pdf",
   fileLabel: "Guide to CINV"
   },
+  
   {
      date: "August 14, 2026",
      title: "Update to Hands-on",
