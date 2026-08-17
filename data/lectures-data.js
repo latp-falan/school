@@ -143,4 +143,20 @@ window.LECTURES = [
      type: "file",
      filename: "EEG_Part_I_Lucero_FALANSchool_2026_01_compressed.pdf"
    }, 
+  {
+     title: "Math Models",
+     presenter: "Patricio Orio",
+     week: "Week 2 — Valparaiso",
+     day: "Monday",
+     type: "file",
+     filename: "Orio-MathModels_FALAN2026.pdf"
+   }, 
+    {
+     title: "Thermoreceptors Models",
+     presenter: "Patricio Orio",
+     week: "Week 2 — Valparaiso",
+     day: "Monday",
+     type: "file",
+     filename: "Orio-Thermoreceptors-FALAN2026.pdf"
+   }, 
 ];
