@@ -28,10 +28,15 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
+     {
+     date: "August 18, 2026",
+     title: "Added  Biophysical Inspired Models of Large Scale Brain Activity ",
+     body: "Lecture of Dr. Patricio Orio"
+   },
   {
      date: "August 17, 2026",
-     title: "Add  lectures ppt ",
-     body: "Added lecture of Dr. Patricio Orio"
+     title: "Added  lectures ppt ",
+     body: "Lecture of Dr. Patricio Orio"
    },
   {
   date: "August 15, 2026",
