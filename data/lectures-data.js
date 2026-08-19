@@ -159,4 +159,12 @@ window.LECTURES = [
      type: "file",
      filename: "Orio-Thermoreceptors-FALAN2026.pdf"
    }, 
+  {
+     title: "Biophysical Inspired Models of Large Scale Brain Activity",
+     presenter: "Patricio Orio",
+     week: "Week 2 — Valparaiso",
+     day: "Tueday",
+     type: "file",
+     filename: "LargeScaleModeling-FALAN2026.pdf"
+   }, 
 ];
