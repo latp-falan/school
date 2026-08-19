@@ -163,8 +163,24 @@ window.LECTURES = [
      title: "Biophysical Inspired Models of Large Scale Brain Activity",
      presenter: "Patricio Orio",
      week: "Week 2 — Valparaiso",
-     day: "Tueday",
+     day: "Tuesday",
      type: "file",
      filename: "LargeScaleModeling-FALAN2026.pdf"
+   }, 
+  {
+     title: "WHOLE BRAIN MODELS OF NEURAL OSCILLATIONS",
+     presenter: "Monica Otero",
+     week: "Week 2 — Valparaiso",
+     day: "Tuesday",
+     type: "file",
+     filename: "Escuela_Invierno_FALAN_2026_WholeBrainModels.pdf"
+   }, 
+  {
+     title: "From neuroimaging to the human connectome",
+     presenter: "Elida Poo",
+     week: "Week 2 — Valparaiso",
+     day: "Tuesday",
+     type: "file",
+     filename: "Presentacion_EscuelaFalan_Conectomas.pdf"
    }, 
 ];
