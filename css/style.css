@@ -602,6 +602,7 @@ table.schedule td.dim { color: var(--ash); font-style: italic; }
   width: auto;
 }
 .logo-strip .ibro-mark { height: 32.5px; }
+.logo-strip .cinv-mark { height: 22px; }
 .logo-strip .placeholder {
   font-family: var(--font-mono);
   font-size: 0.72rem;
