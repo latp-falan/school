@@ -590,18 +590,18 @@ table.schedule td.dim { color: var(--ash); font-style: italic; }
 .logo-strip {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 2.1rem;
   flex-wrap: wrap;
-  row-gap: 0.9rem;
+  row-gap: 1.35rem;
   background: var(--paper);
-  padding: 1.1rem 1.4rem;
+  padding: 1.65rem 2.1rem;
   border-radius: var(--radius);
 }
 .logo-strip img {
-  height: 30px;
+  height: 45px;
   width: auto;
 }
-.logo-strip .ibro-mark { height: 26px; }
+.logo-strip .ibro-mark { height: 39px; }
 .logo-strip .placeholder {
   font-family: var(--font-mono);
   font-size: 0.72rem;
