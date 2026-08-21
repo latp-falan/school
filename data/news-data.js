@@ -31,7 +31,7 @@ window.NEWS = [
   {
      date: "August 21, 2026",
      title: "Monday 24 activities will be at Pontificia Universidad catolica ",
-     body: "<strong>We will meet in Alameda 340,</strong> principad entrance to PUC at 8:40 AM. <strong>Bring your first week badge</strong>"
+     body: "<strong>We will meet in Alameda 340,</strong> principad entrance to PUC at 8:40 AM. <strong>Bring your badge from the first week.</strong>"
    },
   {
      date: "August 18, 2026",
