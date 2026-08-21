@@ -28,7 +28,12 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
-     {
+  {
+     date: "August 21, 2026",
+     title: "Monday 24 activities will be at Pontificia Universidad catolica ",
+     body: "<strong>We will meet in Alameda 340,</strong> principad entrance to PUC at 8:40 AM. <strong>Bring your first week badge</strong>"
+   },
+  {
      date: "August 18, 2026",
      title: "Added  Biophysical Inspired Models of Large Scale Brain Activity ",
      body: "Lecture of Dr. Patricio Orio"
