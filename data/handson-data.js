@@ -106,6 +106,21 @@ window.HANDSON = [
   url: "https://github.com/neuroeng-usach/falan-neurostim-workshop",
   linkLabel: "View on GitHub"
 },
+ {
+    title: "Low-cost laser illumination lecture",
+    presenter: "Vicente Parot",
+    week: "Low-cost laser illumination",
+    type: "file",
+    filename: "2026-08-27 FALAN Low-cost laser illumination.pdf"
+  },
+  {
+    title: "Low-cost laser illumination protocol",
+    presenter: "Vicente Parot",
+    week: "Low-cost laser illumination",
+    type: "file",
+    filename: "2026-08-27 Documento FALAN Low-cost laser illumination.pdf"
+  },
+  
   // ---------------------------------------------------------------------
   // TEMPLATE — Setting up a cheap electrophysiology rig
   // Fill in the real details, then delete the "//" at the start of each
