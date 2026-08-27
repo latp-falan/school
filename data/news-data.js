@@ -28,6 +28,13 @@ window.NEWS = [
   //   title: "Slides added for Synaptic Plasticity workshop",
   //   body: "Two analysis files and the extracellular recordings slides are now available on the Hands-on Materials page."
   // },
+
+  {
+     date: "August 27, 2026",
+     title: "Low-cost laser illumination",
+     body: "Documents for Low cost laser illumination were uploaded"
+   },
+  
   {
      date: "August 21, 2026",
      title: "Monday 24 activities will be at Pontificia Universidad catolica ",
