@@ -484,6 +484,18 @@ table.schedule td.dim { color: var(--ash); font-style: italic; }
   margin-top: 0.2rem;
 }
 
+.day-label::after {
+  content: ": ";
+}
+
+section h3 + .plain-list,
+section h3 + .plain-list.two-col {
+  margin-top: 0.5rem;
+}
+section .plain-list.two-col + h3 {
+  margin-top: 2.4rem;
+}
+
 .plain-list {
   list-style: none;
   margin: 0;
