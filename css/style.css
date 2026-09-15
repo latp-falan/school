@@ -615,6 +615,7 @@ section .plain-list.two-col + h3 {
 }
 .logo-strip .ibro-mark { height: 32.5px; }
 .logo-strip .cinv-mark { height: 22px; }
+.logo-strip .pew-mark { height: 24px; }
 .logo-strip .placeholder {
   font-family: var(--font-mono);
   font-size: 0.72rem;
